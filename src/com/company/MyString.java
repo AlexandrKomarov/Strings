@@ -20,38 +20,9 @@ public class MyString {
                 ch = Character.toLowerCase(ch);
             }
             if (Character.isDigit(ch)) {
-                switch (ch) {
-                    case '1':
-                        ch = '2';
-                        break;
-                    case '2':
-                        ch = '3';
-                        break;
-                    case '3':
-                        ch = '4';
-                        break;
-                    case '4':
-                        ch = '5';
-                        break;
-                    case '5':
-                        ch = '6';
-                        break;
-                    case '6':
-                        ch = '7';
-                        break;
-                    case '7':
-                        ch = '8';
-                        break;
-                    case '8':
-                        ch = '9';
-                        break;
-                    case '9':
-                        ch = '0';
-                        break;
-                    case '0':
-                        ch = '1';
-                        break;
-                }
+                ch = ch == '9'
+                        ? '0'
+                        : (char) (ch + 1);
             }
             stringBuilder.append(ch);
         }
@@ -75,7 +46,7 @@ public class MyString {
             throw new NumberFormatException("Ожидалось число");
         }
         i++;
-        Boolean changeSign;
+        boolean changeSign;
         while (i < chars.length) {
             if (chars[i] == '+' || chars[i] == '-') {
                 changeSign = chars[i] == '-';
@@ -107,11 +78,10 @@ public class MyString {
     public static int numberOfSubString(String str, String sub) {
         String s = str;
         int num = 0;
-        if (sub == "") {
+        if ("".equals(sub)) {
             return -1;
         } else {
-            while (s.indexOf(sub) != -1) {
-                int l = s.indexOf(sub);
+            while (s.contains(sub)) {
                 s = s.substring(s.indexOf(sub) + sub.length());
                 num++;
             }
@@ -129,7 +99,7 @@ public class MyString {
      */
     public static String changeLastSub(String str, String sub, String substitute) {
         String s = str;
-        if (s.indexOf(sub) == -1) {
+        if (!s.contains(sub)) {
             return s;
         } else {
             String endOfS = s.substring(s.lastIndexOf(sub) + sub.length());
@@ -147,9 +117,8 @@ public class MyString {
      * @return строку в которой удвоено каждое вхождение символа ch
      */
     public static String toDoubleChar(String str, char ch) {
-        String s = str;
         StringBuilder stringBuilder = new StringBuilder();
-        for (char currentChar : s.toCharArray()) {
+        for (char currentChar : str.toCharArray()) {
             stringBuilder.append(currentChar);
             if (currentChar == ch) {
                 stringBuilder.append(currentChar);
