@@ -2,7 +2,7 @@ package com.company;
 
 public class MyString {
 
-    private static final int CODE_ZERO = (int)'0';
+    private static final int CODE_ZERO = (int) '0';
 
     public static String changeRegister(String str) {
         char[] s = str.toCharArray();
@@ -57,7 +57,7 @@ public class MyString {
         int i = 0;
         int sum = 0;
         if (Character.isDigit(chars[i])) {
-            sum += (int)chars[i] - CODE_ZERO;
+            sum += (int) chars[i] - CODE_ZERO;
         } else {
             throw new NumberFormatException("Ожидалось число");
         }
@@ -87,11 +87,16 @@ public class MyString {
     public static int numberOfSubString(String str, String sub) {
         String s = str;
         int num = 0;
-        while (s.indexOf(sub) != -1){
-            s = s.substring(0, s.lastIndexOf(sub));
-            num++;
+        if (sub == "") {
+            return -1;
+        } else {
+            while (s.indexOf(sub) != -1) {
+                int l = s.indexOf(sub);
+                s = s.substring(s.indexOf(sub) + sub.length());
+                num++;
+            }
+            return num;
         }
-        return num;
     }
 
     public static String changeLastSub(String str, String sub, String substitute) {
