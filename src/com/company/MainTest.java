@@ -25,6 +25,7 @@ public class MainTest {
     public void testNumberOfSubString() {
         assertEquals(3, MyString.numberOfSubString("baabaabbabadabaaabba", "aab"));
         assertEquals(11, MyString.numberOfSubString("baabaabbabadabaaabba", "a"));
+        assertEquals(3, MyString.numberOfSubString("aaa", "a"));
     }
 
     @Test

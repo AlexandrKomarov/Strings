@@ -85,7 +85,13 @@ public class MyString {
     }
 
     public static int numberOfSubString(String str, String sub) {
-        return 0;
+        String s = str;
+        int num = 0;
+        while (s.indexOf(sub) != -1){
+            s = s.substring(0, s.lastIndexOf(sub));
+            num++;
+        }
+        return num;
     }
 
     public static String changeLastSub(String str, String sub, String substitute) {
