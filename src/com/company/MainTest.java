@@ -30,8 +30,10 @@ public class MainTest {
 
     @Test
     public void testCangeLastSub() {
-        assertEquals("", MyString.changeLastSub("", "", ""));
-        assertEquals("",MyString.changeLastSub("", "", ""));
+        assertEquals("aabbaabaabb", MyString.changeLastSub("aabbaabbaab", "baa", "aab"));
+        assertEquals("baada",MyString.changeLastSub("baada", "aab", "baa"));
+        assertEquals("baada",MyString.changeLastSub("baada", "", "baa"));
+        assertEquals("baa",MyString.changeLastSub("", "", "baa"));
     }
 
     @Test
