@@ -1,0 +1,16 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/com/company/Main.java	(revision )
++++ src/com/company/Main.java	(revision )
+@@ -0,0 +1,8 @@
++package com.company;
++
++public class Main {
++
++    public static void main(String[] args) {
++	// write your code here
++    }
++}

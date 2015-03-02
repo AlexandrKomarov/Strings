@@ -17,12 +17,14 @@ public class MainTest {
 
     @Test
     public void testSumm() {
+        assertEquals(1, MyString.summ("1"));
         assertEquals(6, MyString.summ("2+4+1+5-2-7-4+5-0"));
     }
 
     @Test
     public void testNumberOfSubString(){
         assertEquals(3,MyString.numberOfSubString("baabaabbabadabaaabba", "aab"));
+        assertEquals(11,MyString.numberOfSubString("baabaabbabadabaaabba", "a"));
     }
 
     @Test

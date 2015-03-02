@@ -1,0 +1,15 @@
+Index: src/com/company/MyString.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/com/company/MyString.java	(date 1425277126000)
++++ src/com/company/MyString.java	(revision )
+@@ -19,6 +19,7 @@
+     }
+ 
+     public static String toDoubleChar(String str, char ch){
++
+         return str;
+     }
+ }

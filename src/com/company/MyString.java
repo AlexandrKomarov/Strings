@@ -3,6 +3,9 @@ package com.company;
 public class MyString {
 
     public static String cangeRegister(String str) {
+        for (int i = 0; i < str.length(); i++){
+            
+        }
         return str;
     }
 
