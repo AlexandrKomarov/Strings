@@ -52,14 +52,14 @@ public class MyString {
         return stringBuilder.toString();
     }
 
-    public static int summ(String str) throws Exception {
+    public static int summ(String str) throws NumberFormatException {
         char[] chars = str.toCharArray();
         int i = 0;
         int sum = 0;
         if (Character.isDigit(chars[i])) {
             sum += (int)chars[i] - CODE_ZERO;
         } else {
-            throw new Exception("Ожидалось число");
+            throw new NumberFormatException("Ожидалось число");
         }
         i++;
         Boolean changeSign;
@@ -67,7 +67,7 @@ public class MyString {
             if (chars[i] == '+' || chars[i] == '-') {
                 changeSign = chars[i] == '-';
             } else {
-                throw new Exception("Ожидался знак");
+                throw new NumberFormatException("Ожидался знак");
             }
             i++;
             if (Character.isDigit(chars[i])) {
@@ -77,7 +77,7 @@ public class MyString {
                     sum += (int) chars[i] - CODE_ZERO;
                 }
             } else {
-                throw new Exception("Ожидалось число");
+                throw new NumberFormatException("Ожидалось число");
             }
             i++;
         }
