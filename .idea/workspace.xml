@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2ede5ff0-33f0-4b88-baef-a26a515ad825" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MainTest.java" afterPath="$PROJECT_DIR$/src/com/company/MainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MyString.java" afterPath="$PROJECT_DIR$/src/com/company/MyString.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Strings.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
-    <file path="/Dummy.txt" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425299365718" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425301531303" ignored="false" />
     <file path="/MainTest.java" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425298186688" ignored="false" />
     <file path="/MyString.java" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425301106942" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +86,7 @@
       <file leaf-file-name="MainTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="31" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.30128205">
+            <state line="51" column="61" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.59134614">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +112,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/MainTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/MyString.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MainTest.java" />
       </list>
     </option>
   </component>
@@ -522,7 +521,11 @@
       <created>1425299371963</created>
       <updated>1425299371963</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Поправлен тест к методу changeLastSub&#10;Реализован changeLastSub">
+      <created>1425301538045</created>
+      <updated>1425301538045</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -636,7 +639,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправлен метод numberOfSuString&#10;дописаны тесты к методу numberOfSuString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправлен тест к методу changeLastSub&#10;Реализован changeLastSub" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -655,6 +658,7 @@
     <MESSAGE value="написан медод numberOfSubString" />
     <MESSAGE value="Дописан тест к методу changeLastSub" />
     <MESSAGE value="Поправлен метод numberOfSuString&#10;дописаны тесты к методу numberOfSuString" />
+    <MESSAGE value="Поправлен тест к методу changeLastSub&#10;Реализован changeLastSub" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="31" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.30128205">
+        <state line="51" column="61" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.59134614">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

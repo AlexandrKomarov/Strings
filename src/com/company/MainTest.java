@@ -47,6 +47,8 @@ public class MainTest {
     @Test
     public void testToDoubleChar1() {
         assertEquals("", MyString.toDoubleChar("", 'a'));
+        assertEquals("bbaabaaaab", MyString.toDoubleChar("bbabaab", 'a'));
+        assertEquals("baabaab", MyString.toDoubleChar("baabaab", 'd'));
     }
 
     @Test(expected = Exception.class)
