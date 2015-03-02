@@ -16,9 +16,9 @@ public class MainTest {
     }
 
     @Test
-    public void testSumm() {
+    public void testSumm() throws Exception {
         assertEquals(1, MyString.summ("1"));
-        assertEquals(6, MyString.summ("2+4+1+5-2-7-4+5-0"));
+        assertEquals(4, MyString.summ("2+4+1+5-2-7-4+5-0"));
     }
 
     @Test
@@ -44,12 +44,12 @@ public class MainTest {
     }
 
     @Test(expected = Exception.class)
-    public void testExceptionSumm() {
+    public void testExceptionSumm() throws Exception{
         MyString.summ("12+4");
     }
 
     @Test(expected = Exception.class)
-    public void testException2Summ() {
+    public void testException2Summ() throws Exception{
         MyString.summ("1+2-4+a");
     }
 }

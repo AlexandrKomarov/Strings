@@ -2,6 +2,8 @@ package com.company;
 
 public class MyString {
 
+    private static final int CODE_ZERO = (int)'0';
+
     public static String changeRegister(String str) {
         char[] s = str.toCharArray();
         StringBuilder stringBuilder = new StringBuilder();
@@ -50,8 +52,36 @@ public class MyString {
         return stringBuilder.toString();
     }
 
-    public static int summ(String str) {
-        return 0;
+    public static int summ(String str) throws Exception {
+        char[] chars = str.toCharArray();
+        int i = 0;
+        int sum = 0;
+        if (Character.isDigit(chars[i])) {
+            sum += (int)chars[i] - CODE_ZERO;
+        } else {
+            throw new Exception("Ожидалось число");
+        }
+        i++;
+        Boolean changeSign;
+        while (i < chars.length) {
+            if (chars[i] == '+' || chars[i] == '-') {
+                changeSign = chars[i] == '-';
+            } else {
+                throw new Exception("Ожидался знак");
+            }
+            i++;
+            if (Character.isDigit(chars[i])) {
+                if (changeSign) {
+                    sum -= (int) chars[i] - CODE_ZERO;
+                } else {
+                    sum += (int) chars[i] - CODE_ZERO;
+                }
+            } else {
+                throw new Exception("Ожидалось число");
+            }
+            i++;
+        }
+        return sum;
     }
 
     public static int numberOfSubString(String str, String sub) {
@@ -59,6 +89,7 @@ public class MyString {
     }
 
     public static String changeLastSub(String str, String sub, String substitute) {
+
         return str;
     }
 
