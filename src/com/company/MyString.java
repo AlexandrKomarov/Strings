@@ -112,7 +112,14 @@ public class MyString {
     }
 
     public static String toDoubleChar(String str, char ch) {
-
-        return str;
+        String s = str;
+        StringBuilder stringBuilder = new StringBuilder();
+        for (char currentChar: s.toCharArray()){
+            stringBuilder.append(currentChar);
+            if(currentChar == ch){
+                stringBuilder.append(currentChar);
+            }
+        }
+        return stringBuilder.toString();
     }
 }
