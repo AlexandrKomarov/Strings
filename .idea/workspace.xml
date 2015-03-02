@@ -10,9 +10,9 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
-    <file path="/Dummy.txt" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425298129537" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425299365718" ignored="false" />
     <file path="/MainTest.java" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425298186688" ignored="false" />
-    <file path="/MyString.java" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425299247808" ignored="false" />
+    <file path="/MyString.java" changelist="2ede5ff0-33f0-4b88-baef-a26a515ad825" time="1425301106942" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="MyString.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MyString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="9" selection-start="3015" selection-end="3015" vertical-scroll-proportion="0.0">
+            <state line="103" column="32" selection-start="3163" selection-end="3163" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="method#changeRegister#0;class#MyString#0" expanded="false" />
                 <element signature="method#summ#0;class#MyString#0" expanded="false" />
@@ -87,7 +87,7 @@
       <file leaf-file-name="MainTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.4278846">
+            <state line="37" column="31" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.30128205">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -518,7 +518,11 @@
       <created>1425298145781</created>
       <updated>1425298145781</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Поправлен метод numberOfSuString&#10;дописаны тесты к методу numberOfSuString">
+      <created>1425299371963</created>
+      <updated>1425299371963</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -632,7 +636,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дописан тест к методу changeLastSub" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправлен метод numberOfSuString&#10;дописаны тесты к методу numberOfSuString" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -650,6 +654,7 @@
     <MESSAGE value="написан медод summ" />
     <MESSAGE value="написан медод numberOfSubString" />
     <MESSAGE value="Дописан тест к методу changeLastSub" />
+    <MESSAGE value="Поправлен метод numberOfSuString&#10;дописаны тесты к методу numberOfSuString" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -687,9 +692,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/junit-4.7.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="16" selection-start="2153" selection-end="2153" vertical-scroll-proportion="-6.36">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/junit-4.7.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="35" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/junit-4.7.jar!/org/junit/runner/Result.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="0.33265308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/junit-4.7.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="-6.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/junit-4.7.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MyString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="9" selection-start="3015" selection-end="3015" vertical-scroll-proportion="0.0">
+        <state line="103" column="32" selection-start="3163" selection-end="3163" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="method#changeRegister#0;class#MyString#0" expanded="false" />
             <element signature="method#summ#0;class#MyString#0" expanded="false" />
@@ -699,7 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.4278846">
+        <state line="37" column="31" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.30128205">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

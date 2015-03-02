@@ -100,8 +100,15 @@ public class MyString {
     }
 
     public static String changeLastSub(String str, String sub, String substitute) {
-
-        return str;
+        String s = str;
+        if (s.indexOf(sub) == -1) {
+            return s;
+        } else {
+            String endOfS = s.substring(s.lastIndexOf(sub) + sub.length());
+            s = s.substring(0, s.lastIndexOf(sub));
+            s += substitute + endOfS;
+            return s;
+        }
     }
 
     public static String toDoubleChar(String str, char ch) {
